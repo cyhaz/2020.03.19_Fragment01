@@ -8,5 +8,35 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/firstFragCallBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="프래그먼트 1"/>
+
+            <Button
+                android:id="@+id/seondFragCallBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="프래그먼트 2"/>
+
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/firstFrag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="kr.co.youhyun.a20200319_fragment01.fregments.FirstFragment"/>
+
+
+
     </LinearLayout>
 </layout>
