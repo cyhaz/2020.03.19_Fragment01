@@ -4,16 +4,46 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:background="#000000"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="40sp"
-            android:textColor="#FFFFFF"
-            android:text="두번째 프래그먼트"/>
+            android:gravity="center"
+            android:text="Log In"
+            android:textSize="30dp"
+            android:textColor="@color/yello"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/loginIdEdt"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="ID" />
+
+        <EditText
+            android:id="@+id/loginPwEdt"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="로 그 인"
+            android:textColor="@color/yello"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:background="@drawable/button_layout"/>
 
     </LinearLayout>
 </layout>
