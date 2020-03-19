@@ -30,13 +30,33 @@
 
         </LinearLayout>
 
-        <fragment
-            android:id="@+id/firstFrag"
+        <LinearLayout
+            android:id="@+id/firstFragLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            class="kr.co.youhyun.a20200319_fragment01.fregments.FirstFragment"/>
+            android:orientation="vertical">
 
+            <fragment
+                android:id="@+id/firstFrag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="kr.co.youhyun.a20200319_fragment01.fregments.FirstFragment"/>
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondFragLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/secondFrag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="kr.co.youhyun.a20200319_fragment01.fregments.SecondFragment"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 </layout>
