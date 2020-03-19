@@ -5,4 +5,5 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="lightText">#FFFFFF</color>
     <color name="yello">#FFBB2F</color>
+    <color name="lightHint">#808080</color>
 </resources>

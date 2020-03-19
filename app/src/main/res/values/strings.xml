@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">2020.03.19_Fragment01</string>
+    <string name="app_name">프래그먼트</string>
+    <string name="password">비밀번호</string>
+    <string name="pw_input_hint">비밀번호 입력</string>
 </resources>
