@@ -4,14 +4,41 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
+        android:padding="10dp"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="40sp"
-            android:text="첫 프래그먼트"/>
+            android:text="이름"/>
+
+        <EditText
+            android:id="@+id/nameEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="이름 입력"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="전화번호"/>
+
+        <EditText
+            android:id="@+id/phoneEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="전화번호 입력"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/infoToastBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="정보 토스트 출력"/>
 
     </LinearLayout>
 </layout>
