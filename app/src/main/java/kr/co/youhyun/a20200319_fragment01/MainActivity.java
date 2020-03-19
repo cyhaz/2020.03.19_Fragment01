@@ -1,14 +1,31 @@
 package kr.co.youhyun.a20200319_fragment01;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import kr.co.youhyun.a20200319_fragment01.databinding.ActivityMainBinding;
+
+public class MainActivity extends BaseActivity {
+
+    ActivityMainBinding binding = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        binding = DataBindingUtil.findBinding(this, R.layout.activity_main);
+        setupEvents();
+        setValues();
+    }
+
+    @Override
+    public void setupEvents() {
+
+    }
+
+    @Override
+    public void setValues() {
+
     }
 }
